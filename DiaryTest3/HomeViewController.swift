@@ -66,6 +66,7 @@ class HomeViewController:BaseViewController, UITableViewDelegate, UITableViewDat
         
         //Add slide menu button
         self.addSlideMenuButton()
+        hideKeyboard()
     }
     
     @IBAction func pressOnAdd(_ sender: Any) {
@@ -191,6 +192,14 @@ class HomeViewController:BaseViewController, UITableViewDelegate, UITableViewDat
             
         }
         self.tableView?.reloadData()
+    }
+    //HIDE KEYBOARD WHEN TAP OUTSIDE
+    func hideKeyboard(){
+        let tapOutside = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapOutside)
+    }
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
     }
     //USER DEFAULTS
     
