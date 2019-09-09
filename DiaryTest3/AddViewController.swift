@@ -39,6 +39,7 @@ class AddViewController: UIViewController,UIImagePickerControllerDelegate, UINav
         //SET CORNER RADIUS
         self.imageView?.layer.cornerRadius = self.imageView.frame.width / 2
         self.imageView?.layer.masksToBounds = true
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -49,6 +50,7 @@ class AddViewController: UIViewController,UIImagePickerControllerDelegate, UINav
             imageView?.image = passImage
             txtDate?.text = passDate
         }
+        view.backgroundColor = UIColor(red: 147/255, green: 185/255, blue: 230/255, alpha: 1)
         
     }
     

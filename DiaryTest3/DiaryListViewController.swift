@@ -22,7 +22,7 @@ class DiaryListViewController: UIViewController, UITableViewDelegate, UITableVie
         dataModel = DiaryData()
         dataList = dataModel.showDataByDate(selectedDate: selectedDate)
         self.tableView?.reloadData()
-        
+        view.backgroundColor = UIColor(red: 147/255, green: 185/255, blue: 230/255, alpha: 1)
     }
     
     override func viewDidLoad() {

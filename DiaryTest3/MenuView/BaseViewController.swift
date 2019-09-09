@@ -39,13 +39,13 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
             
             self.openViewControllerBasedOnIdentifier("FontVC")
         case 4:
-            print("Password\n", terminator: "")
-            
-            self.openViewControllerBasedOnIdentifier("PasscodeVC")
-        case 5:
             print("AudioRecording\n", terminator: "")
             
             self.openViewControllerBasedOnIdentifier("recordVC")
+        case 5:
+            print("Password\n", terminator: "")
+            
+            self.openViewControllerBasedOnIdentifier("PasscodeVC")
             break
         default:
             print("default\n", terminator: "")

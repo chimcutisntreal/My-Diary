@@ -35,7 +35,7 @@ class HomeViewController:BaseViewController, UITableViewDelegate, UITableViewDat
         
         //Set background
         background?.image = UIImage(named: imageName)
-        
+        view.backgroundColor = UIColor(red: 147/255, green: 185/255, blue: 230/255, alpha: 1)
         //RETRIEVE USER'S BACKGROUND
         saveUserBackground(backgroundImage: background)
         let data = UserDefaults.standard.object(forKey: "pickedImage") as? NSData
