@@ -32,7 +32,6 @@ class FontViewController: UIViewController, UITableViewDelegate, UITableViewData
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setGradient()
         tableView?.reloadData()
                 // Do any additional setup after loading the view.
     }

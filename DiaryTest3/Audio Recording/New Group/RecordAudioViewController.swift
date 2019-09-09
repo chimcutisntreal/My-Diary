@@ -14,7 +14,6 @@ class RecordAudioViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         stopButton.isEnabled = false
-        setGradient()
     }
 
     func configureUI(_ recordState: RecordingState) {

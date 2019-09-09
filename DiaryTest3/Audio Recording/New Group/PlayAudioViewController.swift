@@ -23,7 +23,6 @@ class PlayAudioViewController: UIViewController {
         super.viewDidLoad()
         setupAudio()
         fileNameLabel.text = recordedAudioURL.lastPathComponent
-        setGradient()
     }
 
     override func viewWillAppear(_ animated: Bool) {

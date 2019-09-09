@@ -30,7 +30,6 @@ class PasscodeSettingsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updatePasscodeView()
-        setGradient()
     }
 
     func updatePasscodeView() {

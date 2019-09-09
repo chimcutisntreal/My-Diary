@@ -41,7 +41,6 @@ class DiaryListViewController: UIViewController, UITableViewDelegate, UITableVie
 //        print("A", title)
 //        print("A1", AddVC.getSelectedDate)
   
-        setGradient()
       
     }
     //PULL TO REFRESH

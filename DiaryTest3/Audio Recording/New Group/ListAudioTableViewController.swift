@@ -18,7 +18,6 @@ class ListAudioTableViewController: UIViewController, UITableViewDelegate, UITab
         recognizer.delegate = self as? UIGestureRecognizerDelegate
         recognizer.delaysTouchesEnded = true
         self.tableView.addGestureRecognizer(recognizer)
-        setGradient()
     }
 
     // MARK: - Table view data source

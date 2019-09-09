@@ -39,9 +39,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         tblMenuOptions.tableFooterView = UIView()
-//        tblMenuOptions.backgroundColor = UIColor(red: 255/255, green: 120/255, blue: 2/255, alpha: 1)
-        setGradient()
-        // Do any additional setup after loading the view.
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
