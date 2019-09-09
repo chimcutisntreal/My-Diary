@@ -8,22 +8,98 @@
 
 /* Begin PBXBuildFile section */
 		3408EFAD216B7FCE0038EE36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3408EFAC216B7FCE0038EE36 /* AppDelegate.swift */; };
-		3408EFAF216B7FCE0038EE36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3408EFAE216B7FCE0038EE36 /* ViewController.swift */; };
+		3408EFAF216B7FCE0038EE36 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3408EFAE216B7FCE0038EE36 /* HomeViewController.swift */; };
 		3408EFB2216B7FCE0038EE36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3408EFB0216B7FCE0038EE36 /* Main.storyboard */; };
 		3408EFB5216B7FCE0038EE36 /* DiaryTest3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3408EFB3216B7FCE0038EE36 /* DiaryTest3.xcdatamodeld */; };
 		3408EFB7216B7FD00038EE36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3408EFB6216B7FD00038EE36 /* Assets.xcassets */; };
 		3408EFBA216B7FD00038EE36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3408EFB8216B7FD00038EE36 /* LaunchScreen.storyboard */; };
+		3408EFC9216B8CA00038EE36 /* DiaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3408EFC8216B8CA00038EE36 /* DiaryData.swift */; };
+		340B00FC2173822A0099DACF /* DiaryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B00FB2173822A0099DACF /* DiaryListViewController.swift */; };
+		3410226F217F1D9B00ECE5AA /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3410226E217F1D9B00ECE5AA /* FSCalendar.framework */; };
+		342EC4952196B9680074CD82 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342EC4942196B9670074CD82 /* AddViewController.swift */; };
+		34B86743216BCC8F00E5A507 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B86742216BCC8F00E5A507 /* CustomTableViewCell.swift */; };
+		34BB1C25217CF2ED0094CB56 /* PasscodeLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BB1C24217CF2ED0094CB56 /* PasscodeLock.framework */; };
+		34BB1C2B217CF67E0094CB56 /* PasscodeLockConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB1C28217CF67E0094CB56 /* PasscodeLockConfiguration.swift */; };
+		34BB1C2C217CF67E0094CB56 /* PasscodeSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB1C29217CF67E0094CB56 /* PasscodeSettingsViewController.swift */; };
+		34BB1C2D217CF67E0094CB56 /* UserDefaultsPasscodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB1C2A217CF67E0094CB56 /* UserDefaultsPasscodeRepository.swift */; };
+		34C937FB2179BCE200062B17 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C937F92179BCE100062B17 /* MenuViewController.swift */; };
+		34C937FC2179BCE200062B17 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C937FA2179BCE200062B17 /* BaseViewController.swift */; };
+		34C937FF2179C99F00062B17 /* BackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C937FE2179C99F00062B17 /* BackgroundViewController.swift */; };
+		34C938022179D0AB00062B17 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C938012179D0AB00062B17 /* CollectionViewCell.swift */; };
+		34C93805217A248600062B17 /* FontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C93804217A248600062B17 /* FontViewController.swift */; };
+		34C93809217A2E0F00062B17 /* FontTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C93808217A2E0F00062B17 /* FontTableViewCell.swift */; };
+		34E2D469218069DE0049876A /* ListAudioTableViewController+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E2D462218069DD0049876A /* ListAudioTableViewController+FileManager.swift */; };
+		34E2D46A218069DE0049876A /* EditAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E2D463218069DD0049876A /* EditAudioViewController.swift */; };
+		34E2D46B218069DE0049876A /* RecordAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E2D464218069DD0049876A /* RecordAudioViewController.swift */; };
+		34E2D46C218069DE0049876A /* ListAudioTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E2D465218069DD0049876A /* ListAudioTableViewController.swift */; };
+		34E2D46D218069DE0049876A /* EditAudioViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E2D466218069DD0049876A /* EditAudioViewController+Navigation.swift */; };
+		34E2D46E218069DE0049876A /* PlayAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E2D467218069DE0049876A /* PlayAudioViewController.swift */; };
+		34E2D46F218069DE0049876A /* PlayAudioViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E2D468218069DE0049876A /* PlayAudioViewController+Audio.swift */; };
+		34E2D47121806D930049876A /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E2D47021806D930049876A /* Alert.swift */; };
+		34E2D47321806D9D0049876A /* ListAudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E2D47221806D9D0049876A /* ListAudioTableViewCell.swift */; };
+		AF06E47D76C78A2915AE08D5 /* Pods_DiaryTest3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856A4FC9257666927345C8E5 /* Pods_DiaryTest3.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		341A9DC6217F87E60024B53C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		347C7F9E2179166400CFC2D7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3408EFA9216B7FCE0038EE36 /* DiaryTest3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiaryTest3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3408EFAC216B7FCE0038EE36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3408EFAE216B7FCE0038EE36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3408EFAE216B7FCE0038EE36 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3408EFB1216B7FCE0038EE36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3408EFB4216B7FCE0038EE36 /* DiaryTest3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DiaryTest3.xcdatamodel; sourceTree = "<group>"; };
 		3408EFB6216B7FD00038EE36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3408EFB9216B7FD00038EE36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3408EFBB216B7FD00038EE36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3408EFC2216B82C10038EE36 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3408EFC8216B8CA00038EE36 /* DiaryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryData.swift; sourceTree = "<group>"; };
+		340B00FB2173822A0099DACF /* DiaryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListViewController.swift; sourceTree = "<group>"; };
+		3410226E217F1D9B00ECE5AA /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		342EC4942196B9670074CD82 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		3453CFE0216D3A220028F9F1 /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B86742216BCC8F00E5A507 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		34BB1C24217CF2ED0094CB56 /* PasscodeLock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PasscodeLock.framework; path = Carthage/Build/iOS/PasscodeLock.framework; sourceTree = "<group>"; };
+		34BB1C28217CF67E0094CB56 /* PasscodeLockConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeLockConfiguration.swift; sourceTree = "<group>"; };
+		34BB1C29217CF67E0094CB56 /* PasscodeSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeSettingsViewController.swift; sourceTree = "<group>"; };
+		34BB1C2A217CF67E0094CB56 /* UserDefaultsPasscodeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsPasscodeRepository.swift; sourceTree = "<group>"; };
+		34C937F92179BCE100062B17 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		34C937FA2179BCE200062B17 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		34C937FE2179C99F00062B17 /* BackgroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundViewController.swift; sourceTree = "<group>"; };
+		34C938012179D0AB00062B17 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		34C93804217A248600062B17 /* FontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontViewController.swift; sourceTree = "<group>"; };
+		34C93808217A2E0F00062B17 /* FontTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTableViewCell.swift; sourceTree = "<group>"; };
+		34E2D462218069DD0049876A /* ListAudioTableViewController+FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ListAudioTableViewController+FileManager.swift"; sourceTree = "<group>"; };
+		34E2D463218069DD0049876A /* EditAudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAudioViewController.swift; sourceTree = "<group>"; };
+		34E2D464218069DD0049876A /* RecordAudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordAudioViewController.swift; sourceTree = "<group>"; };
+		34E2D465218069DD0049876A /* ListAudioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAudioTableViewController.swift; sourceTree = "<group>"; };
+		34E2D466218069DD0049876A /* EditAudioViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EditAudioViewController+Navigation.swift"; sourceTree = "<group>"; };
+		34E2D467218069DE0049876A /* PlayAudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayAudioViewController.swift; sourceTree = "<group>"; };
+		34E2D468218069DE0049876A /* PlayAudioViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlayAudioViewController+Audio.swift"; sourceTree = "<group>"; };
+		34E2D47021806D930049876A /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		34E2D47221806D9D0049876A /* ListAudioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAudioTableViewCell.swift; sourceTree = "<group>"; };
+		49909377F56AEA407ABD0D8B /* Pods-DiaryTest3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaryTest3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiaryTest3/Pods-DiaryTest3.debug.xcconfig"; sourceTree = "<group>"; };
+		60BAAB23D147CE9E92C2559F /* Pods-DiaryTest3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaryTest3.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiaryTest3/Pods-DiaryTest3.release.xcconfig"; sourceTree = "<group>"; };
+		856A4FC9257666927345C8E5 /* Pods_DiaryTest3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiaryTest3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +107,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3410226F217F1D9B00ECE5AA /* FSCalendar.framework in Frameworks */,
+				34BB1C25217CF2ED0094CB56 /* PasscodeLock.framework in Frameworks */,
+				AF06E47D76C78A2915AE08D5 /* Pods_DiaryTest3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +121,8 @@
 			children = (
 				3408EFAB216B7FCE0038EE36 /* DiaryTest3 */,
 				3408EFAA216B7FCE0038EE36 /* Products */,
+				3408EFC1216B82C10038EE36 /* Frameworks */,
+				6E6A27712A7485576CB080D0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +138,106 @@
 			isa = PBXGroup;
 			children = (
 				3408EFAC216B7FCE0038EE36 /* AppDelegate.swift */,
-				3408EFAE216B7FCE0038EE36 /* ViewController.swift */,
+				3408EFAE216B7FCE0038EE36 /* HomeViewController.swift */,
+				340B00FB2173822A0099DACF /* DiaryListViewController.swift */,
+				342EC4942196B9670074CD82 /* AddViewController.swift */,
+				3408EFC8216B8CA00038EE36 /* DiaryData.swift */,
+				34B86742216BCC8F00E5A507 /* CustomTableViewCell.swift */,
 				3408EFB0216B7FCE0038EE36 /* Main.storyboard */,
 				3408EFB6216B7FD00038EE36 /* Assets.xcassets */,
+				34E2D450218068AA0049876A /* Audio Recording */,
+				34C937FD2179C96D00062B17 /* MenuView */,
 				3408EFB8216B7FD00038EE36 /* LaunchScreen.storyboard */,
 				3408EFBB216B7FD00038EE36 /* Info.plist */,
 				3408EFB3216B7FCE0038EE36 /* DiaryTest3.xcdatamodeld */,
 			);
 			path = DiaryTest3;
+			sourceTree = "<group>";
+		};
+		3408EFC1216B82C10038EE36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3410226E217F1D9B00ECE5AA /* FSCalendar.framework */,
+				34BB1C24217CF2ED0094CB56 /* PasscodeLock.framework */,
+				3453CFE0216D3A220028F9F1 /* FSCalendar.framework */,
+				3408EFC2216B82C10038EE36 /* CoreData.framework */,
+				856A4FC9257666927345C8E5 /* Pods_DiaryTest3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34BB1C27217CF3DA0094CB56 /* Passcode */ = {
+			isa = PBXGroup;
+			children = (
+				34BB1C28217CF67E0094CB56 /* PasscodeLockConfiguration.swift */,
+				34BB1C29217CF67E0094CB56 /* PasscodeSettingsViewController.swift */,
+				34BB1C2A217CF67E0094CB56 /* UserDefaultsPasscodeRepository.swift */,
+			);
+			path = Passcode;
+			sourceTree = "<group>";
+		};
+		34C937FD2179C96D00062B17 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				34C937FA2179BCE200062B17 /* BaseViewController.swift */,
+				34C937F92179BCE100062B17 /* MenuViewController.swift */,
+				34C938002179D07F00062B17 /* Background */,
+				34C93803217A244D00062B17 /* Font */,
+				34BB1C27217CF3DA0094CB56 /* Passcode */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
+		34C938002179D07F00062B17 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				34C937FE2179C99F00062B17 /* BackgroundViewController.swift */,
+				34C938012179D0AB00062B17 /* CollectionViewCell.swift */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		34C93803217A244D00062B17 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				34C93804217A248600062B17 /* FontViewController.swift */,
+				34C93808217A2E0F00062B17 /* FontTableViewCell.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		34E2D450218068AA0049876A /* Audio Recording */ = {
+			isa = PBXGroup;
+			children = (
+				34E2D453218068D70049876A /* Controllers */,
+			);
+			path = "Audio Recording";
+			sourceTree = "<group>";
+		};
+		34E2D453218068D70049876A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				34E2D47221806D9D0049876A /* ListAudioTableViewCell.swift */,
+				34E2D47021806D930049876A /* Alert.swift */,
+				34E2D463218069DD0049876A /* EditAudioViewController.swift */,
+				34E2D466218069DD0049876A /* EditAudioViewController+Navigation.swift */,
+				34E2D465218069DD0049876A /* ListAudioTableViewController.swift */,
+				34E2D462218069DD0049876A /* ListAudioTableViewController+FileManager.swift */,
+				34E2D467218069DE0049876A /* PlayAudioViewController.swift */,
+				34E2D468218069DE0049876A /* PlayAudioViewController+Audio.swift */,
+				34E2D464218069DD0049876A /* RecordAudioViewController.swift */,
+			);
+			name = Controllers;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		6E6A27712A7485576CB080D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49909377F56AEA407ABD0D8B /* Pods-DiaryTest3.debug.xcconfig */,
+				60BAAB23D147CE9E92C2559F /* Pods-DiaryTest3.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +247,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3408EFBE216B7FD00038EE36 /* Build configuration list for PBXNativeTarget "DiaryTest3" */;
 			buildPhases = (
+				2079B99C9C2304F38F6977F4 /* [CP] Check Pods Manifest.lock */,
 				3408EFA5216B7FCE0038EE36 /* Sources */,
 				3408EFA6216B7FCE0038EE36 /* Frameworks */,
 				3408EFA7216B7FCE0038EE36 /* Resources */,
+				DFD6F944BEFCA3FCCD61F5CE /* [CP] Embed Pods Frameworks */,
+				347C7F9D2179116F00CFC2D7 /* ShellScript */,
+				347C7F9E2179166400CFC2D7 /* CopyFiles */,
+				34BB1C26217CF2FD0094CB56 /* ShellScript */,
+				3482BCB0217D930800ADC03D /* ShellScript */,
+				341A9DC6217F87E60024B53C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +279,7 @@
 				TargetAttributes = {
 					3408EFA8216B7FCE0038EE36 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -133,14 +314,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2079B99C9C2304F38F6977F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiaryTest3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		347C7F9D2179116F00CFC2D7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+		3482BCB0217D930800ADC03D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		34BB1C26217CF2FD0094CB56 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PasscodeLock.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		DFD6F944BEFCA3FCCD61F5CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DiaryTest3/Pods-DiaryTest3-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/Pastel/Pastel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pastel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiaryTest3/Pods-DiaryTest3-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3408EFA5216B7FCE0038EE36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3408EFAF216B7FCE0038EE36 /* ViewController.swift in Sources */,
+				3408EFAF216B7FCE0038EE36 /* HomeViewController.swift in Sources */,
+				34BB1C2B217CF67E0094CB56 /* PasscodeLockConfiguration.swift in Sources */,
+				34C93805217A248600062B17 /* FontViewController.swift in Sources */,
+				34E2D46A218069DE0049876A /* EditAudioViewController.swift in Sources */,
+				34E2D46F218069DE0049876A /* PlayAudioViewController+Audio.swift in Sources */,
+				340B00FC2173822A0099DACF /* DiaryListViewController.swift in Sources */,
+				34E2D47121806D930049876A /* Alert.swift in Sources */,
+				34C937FF2179C99F00062B17 /* BackgroundViewController.swift in Sources */,
+				34B86743216BCC8F00E5A507 /* CustomTableViewCell.swift in Sources */,
+				34E2D46E218069DE0049876A /* PlayAudioViewController.swift in Sources */,
+				3408EFC9216B8CA00038EE36 /* DiaryData.swift in Sources */,
+				34E2D469218069DE0049876A /* ListAudioTableViewController+FileManager.swift in Sources */,
+				34BB1C2D217CF67E0094CB56 /* UserDefaultsPasscodeRepository.swift in Sources */,
+				34E2D46B218069DE0049876A /* RecordAudioViewController.swift in Sources */,
+				34E2D46D218069DE0049876A /* EditAudioViewController+Navigation.swift in Sources */,
+				34C937FC2179BCE200062B17 /* BaseViewController.swift in Sources */,
+				34BB1C2C217CF67E0094CB56 /* PasscodeSettingsViewController.swift in Sources */,
+				34E2D46C218069DE0049876A /* ListAudioTableViewController.swift in Sources */,
 				3408EFB5216B7FCE0038EE36 /* DiaryTest3.xcdatamodeld in Sources */,
+				34C93809217A2E0F00062B17 /* FontTableViewCell.swift in Sources */,
+				34E2D47321806D9D0049876A /* ListAudioTableViewCell.swift in Sources */,
 				3408EFAD216B7FCE0038EE36 /* AppDelegate.swift in Sources */,
+				34C937FB2179BCE200062B17 /* MenuViewController.swift in Sources */,
+				342EC4952196B9680074CD82 /* AddViewController.swift in Sources */,
+				34C938022179D0AB00062B17 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -230,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -282,34 +569,48 @@
 		};
 		3408EFBF216B7FD00038EE36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49909377F56AEA407ABD0D8B /* Pods-DiaryTest3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22899489D2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DiaryTest3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chimcutisntreal.DiaryTest3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		3408EFC0216B7FD00038EE36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60BAAB23D147CE9E92C2559F /* Pods-DiaryTest3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22899489D2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DiaryTest3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chimcutisntreal.DiaryTest3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

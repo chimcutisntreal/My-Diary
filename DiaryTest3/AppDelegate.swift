@@ -8,26 +8,52 @@
 
 import UIKit
 import CoreData
+import PasscodeLock
+import Pastel
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    lazy var passcodeLockPresenter: PasscodeLockPresenter = {
+        
+        let configuration = PasscodeLockConfiguration()
+        let presenter = PasscodeLockPresenter(mainWindow: self.window, configuration: configuration)
+        
+        return presenter
+    }()
+    
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        passcodeLockPresenter.present()
         return true
     }
+   
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        passcodeLockPresenter.present()
+    }
 
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+//        for family: String in UIFont.familyNames.sorted()
+//        {
+//            let names = UIFont.fontNames(forFamilyName: family)
+//            print("family: \(family) Font names:\(names)")
+//        }
+        let navigationBarAppearace = UINavigationBar.appearance()
+        navigationBarAppearace.tintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+//        navigationBarAppearace.barTintColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.1)
+        let navigationFont = UIFont(name: "Marker Felt", size: 30.0)!
+        let navigationAttributesFont = [NSAttributedString.Key.font: navigationFont]
+        UINavigationBar.appearance().titleTextAttributes = navigationAttributesFont
+//      UIBarButtonItem.appearance().setTitleTextAttributes(navigationAttributesFont, for: .normal)
+        return true
+    }
+    
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -88,6 +114,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
+    
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+    guard let input = input else { return nil }
+    return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
 }
 
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+    return input.rawValue
+}
+}
