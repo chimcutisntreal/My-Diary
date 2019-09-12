@@ -75,12 +75,12 @@ class DiaryListViewController: UIViewController, UITableViewDelegate, UITableVie
         let entityName = dataList[indexPath.row]
         cell.lblTitle?.text = entityName.value(forKey: "diaryTitle") as? String
         cell.lblBodyText?.text = entityName.value(forKey: "diaryBodyText") as? String
-        if let createdAt = entityName.value(forKey: "diaryDateTime") as?  String {
-            cell.lblcreatedAt?.text = ""
-        }
-//        if let imageViewCellData = (entityName.value(forKey: "diaryImage") as? Data) {
-//            cell.imageViewCell?.image = UIImage(data: imageViewCellData)
+//        if let createdAt = entityName.value(forKey: "diaryDateTime") as?  String {
+//            cell.lblcreatedAt?.text = ""
 //        }
+////        if let imageViewCellData = (entityName.value(forKey: "diaryImage") as? Data) {
+////            cell.imageViewCell?.image = UIImage(data: imageViewCellData)
+////        }
         return cell
     }
     

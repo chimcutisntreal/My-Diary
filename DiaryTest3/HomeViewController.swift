@@ -23,7 +23,8 @@ class HomeViewController:BaseViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var background: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addButton: UIButton!
-    @IBOutlet weak var lblRecent: UILabel!
+    @IBOutlet weak var lblAllRecords: UILabel!
+    @IBOutlet weak var calendar: FSCalendar!
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,11 +63,11 @@ class HomeViewController:BaseViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView?.refreshControl = refresher
-        lblRecent.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.5).cgColor
+        lblAllRecords.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.5).cgColor
         
         //Add slide menu button
         self.addSlideMenuButton()
-        hideKeyboard()
+        //        hideKeyboard()
     }
     
     @IBAction func pressOnAdd(_ sender: Any) {
@@ -121,6 +122,7 @@ class HomeViewController:BaseViewController, UITableViewDelegate, UITableViewDat
         }
         vc.passDate = (entityName.value(forKey: "diaryDateTime") as? String)!
         vc.isEditView = true
+        print("tapped")
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -189,20 +191,14 @@ class HomeViewController:BaseViewController, UITableViewDelegate, UITableViewDat
             } catch {
                 print("Could not get data")
             }
-            
         }
+        
         self.tableView?.reloadData()
     }
-    //HIDE KEYBOARD WHEN TAP OUTSIDE
-    func hideKeyboard(){
-        let tapOutside = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        view.addGestureRecognizer(tapOutside)
-    }
-    @objc func dismissKeyboard(){
-        view.endEditing(true)
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.search.endEditing(true)
     }
     //USER DEFAULTS
-    
     func saveFontName(fontname: String){
         UserDefaults.standard.set(fontname, forKey: "fontname")
     }

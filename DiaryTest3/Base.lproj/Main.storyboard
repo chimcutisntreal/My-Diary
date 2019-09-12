@@ -97,7 +97,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="3oJ-gT-UZn"/>
                                 </constraints>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="UNY-Xw-40O"/>
                                 </connections>
@@ -157,14 +157,15 @@
                     <connections>
                         <outlet property="addButton" destination="90y-In-LJh" id="7QQ-1g-Cdy"/>
                         <outlet property="background" destination="OWB-t9-A6r" id="EDH-MM-Pvx"/>
-                        <outlet property="lblRecent" destination="KfQ-XX-3ns" id="M1L-sY-c7M"/>
+                        <outlet property="calendar" destination="iXh-zP-DQS" id="apX-gm-dhU"/>
+                        <outlet property="lblAllRecords" destination="KfQ-XX-3ns" id="eOb-il-2l0"/>
                         <outlet property="search" destination="t1V-zo-Nnx" id="oza-i3-OZw"/>
-                        <outlet property="tableView" destination="Dqx-oe-pkA" id="Tgb-ZQ-EnF"/>
+                        <outlet property="tableView" destination="Dqx-oe-pkA" id="X7k-lg-dsp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7602.3999999999996" y="-156.97151424287858"/>
+            <point key="canvasLocation" x="3396" y="259"/>
         </scene>
         <!--Diary List Controller-->
         <scene sceneID="QYm-H1-gAG">
@@ -254,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nB-bK-pTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13256.799999999999" y="-31.03448275862069"/>
+            <point key="canvasLocation" x="5350" y="259"/>
         </scene>
         <!--Add Diary-->
         <scene sceneID="fME-cf-BJB">
@@ -368,11 +369,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0Q-Fk-6pM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15154.4" y="-31.03448275862069"/>
+            <point key="canvasLocation" x="3396" y="1110"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pwy-C3-KZg">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bh8-I1-crg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q6Y-CF-UhM" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SBl-ir-KP5">
@@ -384,13 +386,13 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="g2Q-Zg-rdG"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bh8-I1-crg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6730.3999999999996" y="-157.38916256157637"/>
+            <point key="canvasLocation" x="2454" y="208"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JNo-4A-LQz">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sAs-id-cX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Ad-Er-Wdl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="neu-Ve-IN1">
@@ -406,9 +408,8 @@
                         <segue destination="3ZV-K1-7Ts" kind="relationship" relationship="rootViewController" id="byS-ew-ngC"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sAs-id-cX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14212" y="-31.03448275862069"/>
+            <point key="canvasLocation" x="2454" y="1110"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hJh-HT-TLK">
@@ -426,7 +427,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="esZ-9T-2D5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12314.4" y="-31.03448275862069"/>
+            <point key="canvasLocation" x="4407" y="259"/>
         </scene>
         <!--Background-->
         <scene sceneID="BMA-lv-BMD">
@@ -577,7 +578,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lz8-Tl-5lz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-444" y="-1284"/>
+            <point key="canvasLocation" x="-478" y="-563"/>
         </scene>
         <!--Font-->
         <scene sceneID="ICd-1p-HYI">
